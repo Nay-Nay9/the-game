@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbn1kxxem0xpm"]
+
+[ext_resource type="Script" uid="uid://b5r4wychr4857" path="res://Scripts/player.gd" id="1_cvnsp"]
+[ext_resource type="PackedScene" uid="uid://dc31l3tnuh8en" path="res://Scenes/gun.tscn" id="2_6t5aa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(40, 40)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_cvnsp")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="Gun" parent="." instance=ExtResource("2_6t5aa")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cvnsp")

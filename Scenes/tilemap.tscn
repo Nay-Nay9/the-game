@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://djlecaqhea26g"]
+
+[ext_resource type="TileSet" uid="uid://vogpcgmne7bj" path="res://TileMapTextures/crate.tres" id="1_lql4k"]
+
+[node name="Tilemap" type="TileMapLayer"]
+physics_interpolation_mode = 1
+position = Vector2(1, 1)
+tile_set = ExtResource("1_lql4k")
