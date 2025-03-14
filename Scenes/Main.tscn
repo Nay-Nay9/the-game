@@ -9,7 +9,6 @@
 [node name="Player" parent="." instance=ExtResource("1_idj7w")]
 
 [node name="Camera" type="Camera2D" parent="Player"]
-position_smoothing_enabled = true
 
 [node name="Enemy Ranged" parent="." instance=ExtResource("4_rgh2o")]
 
